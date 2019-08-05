@@ -1,0 +1,42 @@
+server:
+  port: 8089
+spring:
+  application:
+    name: order-service
+  datasource:
+    url: jdbc:mysql://192.168.12.132:9001/supermall3
+    username: root
+    password: 123456
+    driver-class-name: com.mysql.jdbc.Driver
+  jackson:
+    default-property-inclusion: non_null
+  redis:
+    host: 192.168.12.132
+
+eureka:
+  client:
+    service-url:
+      defaultZone: http://127.0.0.1:10086/eureka
+    registry-fetch-interval-seconds: 5
+  instance:
+    prefer-ip-address: true
+    ip-address: 127.0.0.1
+mybatis:
+  type-aliases-package: com.supermall.order.pojo
+sm:
+  jwt:
+    pubKeyPath: E:\\temp\rsa\\id_rsa.pub # 公钥地址
+    expire: 30 # 过期时间,单位分钟
+    cookieName: SM_TOKEN
+  worker:
+    workerId: 1
+    dataCenterId: 1
+  pay:
+    appID: wxf291aaeaf6b403ad
+    mchID: gh_5aacba1f66db
+    key: 26823625d834e2d9f33fad7b9a951f7f
+    httpConnectTimeoutMs: 1000
+    httpReadTimeoutMs: 8000
+    notifyUrl: http://tyuts5.natappfree.cc/notify/pay
+
+

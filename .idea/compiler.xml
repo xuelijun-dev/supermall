@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile default="true" name="Default" enabled="true" />
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="sm-page" />
+        <module name="sm-user-service" />
+        <module name="sm-item-interface" />
+        <module name="sm-user-interface" />
+        <module name="sm-order" />
+        <module name="sm-registry" />
+        <module name="sm-gateway" />
+        <module name="sm-cart" />
+        <module name="sm-searchs" />
+        <module name="sm-auth-common" />
+        <module name="smitemservice" />
+        <module name="sm-common" />
+        <module name="sm-sms" />
+        <module name="sm-upload" />
+        <module name="sm-item-services" />
+        <module name="sm-auth-service" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="sm-item-service" target="1.8" />
+      <module name="sm-search" target="1.8" />
+      <module name="smitemservice" target="1.8" />
+    </bytecodeTargetLevel>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="sm-auth" options="-parameters" />
+      <module name="sm-auth-common" options="-parameters" />
+      <module name="sm-auth-service" options="-parameters" />
+      <module name="sm-cart" options="-parameters" />
+      <module name="sm-common" options="-parameters" />
+      <module name="sm-gateway" options="-parameters" />
+      <module name="sm-item" options="-parameters" />
+      <module name="sm-item-interface" options="-parameters" />
+      <module name="sm-item-service" options="-parameters" />
+      <module name="sm-item-services" options="-parameters" />
+      <module name="sm-order" options="-parameters" />
+      <module name="sm-page" options="-parameters" />
+      <module name="sm-registry" options="-parameters" />
+      <module name="sm-search" options="-parameters" />
+      <module name="sm-searchs" options="-parameters" />
+      <module name="sm-sms" options="-parameters" />
+      <module name="sm-upload" options="-parameters" />
+      <module name="sm-user" options="-parameters" />
+      <module name="sm-user-interface" options="-parameters" />
+      <module name="sm-user-service" options="-parameters" />
+      <module name="smitemservice" options="-parameters" />
+    </option>
+  </component>
+</project>
